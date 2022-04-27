@@ -1,5 +1,5 @@
 import React from "react";
-import "tw-elements";
+
 import "../assets/css/global.css";
 //import "../assets/css/output.css";
 import { Link } from "gatsby";

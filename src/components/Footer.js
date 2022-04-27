@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/global.css";
-import "tw-elements";
+
 const Footer = () => {
   return (
     <footer className="text-center bg-gray-900 text-white justify-center">

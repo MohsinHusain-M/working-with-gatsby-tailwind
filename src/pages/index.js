@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import "tw-elements";
+
 import "../assets/css/global.css";
 import { StaticImage } from "gatsby-plugin-image";
 import ballGIF from "../assets/images/floatingBallGif.gif";
