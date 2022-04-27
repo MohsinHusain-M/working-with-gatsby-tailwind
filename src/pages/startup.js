@@ -1,11 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-const career = () => {
+
+const startup = () => {
   return (
     <Layout>
-      <p>career page</p>
+      <h1>startupDiaries Page</h1>
     </Layout>
   );
 };
 
-export default career;
+export default startup;

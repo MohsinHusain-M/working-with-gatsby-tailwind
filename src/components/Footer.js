@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/mainTailwind.css";
+import "../assets/css/global.css";
 import "tw-elements";
 const Footer = () => {
   return (

@@ -1,6 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import "tw-elements";
+import "../assets/css/global.css";
 import { StaticImage } from "gatsby-plugin-image";
 import ballGIF from "../assets/images/floatingBallGif.gif";
 const IndexPage = () => {
@@ -23,7 +24,7 @@ const IndexPage = () => {
             <p class="text-2xl">Here at Ednam we develop</p>
             <p class="text-4xl">Practical Smart Garments, that Enrich Lives</p>
           </div>
-          <div class="flex flex-row  items-center justify-center">
+          <div class="flex flex-row items-center justify-center">
             <div class="flex pl-20">
               <StaticImage
                 src="../assets/images/advanceClothes.png"
