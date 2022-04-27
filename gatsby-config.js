@@ -11,9 +11,9 @@ module.exports = {
         spaceId: "4yn1w4iyl62m",
       },
     },
-    `gatsby-plugin-emotion`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-postcss`,
   ],
 };
