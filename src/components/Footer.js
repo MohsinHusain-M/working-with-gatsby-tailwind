@@ -3,7 +3,7 @@ import "../assets/css/global.css";
 
 const Footer = () => {
   return (
-    <footer className="text-center bg-gray-900 text-white justify-center">
+    <footer className=" text-center bg-gray-900 text-white justify-center">
       <div className="container px-6 pt-6 justify-center">
         <div className="flex justify-center mb-6">
           <a
