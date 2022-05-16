@@ -88,6 +88,14 @@ const Navbar = () => {
                 Startup Diaries
               </Link>
             </li>
+            <li class="nav-item pr-2">
+              <Link
+                class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0"
+                to="/product"
+              >
+                Products
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
