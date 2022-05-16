@@ -2,15 +2,18 @@ import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
+import slugify from "slugify";
 const RecipeTemplate = ({ data }) => {
   const {
     title,
     cookTime,
-    description: { description },
+    description: { description, id },
   } = data.contentfulRecipe;
   console.log(title);
-  console.log(description.id);
-  console.log("https://workingwithgatsbytailwindmain.gatsbyjs.io/{$title}");
+  const slug = slugify(title, { lower: true });
+  console.log(id);
+  const linkConnect = `https://workingwithgatsbytailwindmain.gatsbyjs.io/${slug}`;
+  console.log(linkConnect);
   return (
     <Layout>
       <div>
@@ -24,10 +27,11 @@ const RecipeTemplate = ({ data }) => {
       </div>
       <div>
         <button
-          data-item-id={description.id}
+          class="snipcart-add-item"
+          data-item-id={id}
           data-item-price="99.99"
-          data-item-url="https://workingwithgatsbytailwindmain.gatsbyjs.io/{$title}"
-          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+          data-item-url={linkConnect}
+          data-item-description={description}
           data-item-image=""
           data-item-name={title}
         >
