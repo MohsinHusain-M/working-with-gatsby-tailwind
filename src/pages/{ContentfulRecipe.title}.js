@@ -9,7 +9,8 @@ const RecipeTemplate = ({ data }) => {
     description: { description },
   } = data.contentfulRecipe;
   console.log(title);
-
+  console.log(description.id);
+  console.log("https://workingwithgatsbytailwindmain.gatsbyjs.io/{$title}");
   return (
     <Layout>
       <div>
@@ -23,11 +24,12 @@ const RecipeTemplate = ({ data }) => {
       </div>
       <div>
         <button
-          class="snipcart-add-item"
-          data-item-id="starry-night"
-          data-item-price="79.99"
+          data-item-id={description.id}
+          data-item-price="99.99"
+          data-item-url="https://workingwithgatsbytailwindmain.gatsbyjs.io/{$title}"
           data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
-          data-item-name="The Starry Night"
+          data-item-image=""
+          data-item-name={title}
         >
           Add to cart
         </button>
