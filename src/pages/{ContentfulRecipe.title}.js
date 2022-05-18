@@ -25,7 +25,7 @@ const RecipeTemplate = ({ data }) => {
         <p>{cookTime}</p>
         <p>{description}</p>
       </div>
-      <div>
+      <div class="border-x-4">
         <button
           class="snipcart-add-item"
           data-item-id={id}
