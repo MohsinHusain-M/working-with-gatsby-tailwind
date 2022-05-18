@@ -7,7 +7,7 @@ import ballGIF from "../assets/images/floatingBallGif.gif";
 const IndexPage = () => {
   return (
     <Layout>
-      <div class="items-center justify-center  self-center">
+      <div class="items-center justify-center  self-center overflow-hidden">
         <div class="flex justify-center pt-10">
           <StaticImage
             src="../assets/images/untitled-design-7.png"

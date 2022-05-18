@@ -4,9 +4,8 @@ import { Menu } from "@headlessui/react";
 
 const Navbar = () => {
   return (
-    <nav>
-      {/**For Mobile view */}
-      <Menu as="div" class="md:hidden bg-gray-700 text-white px-2 py-2 ">
+    <nav class="w-full flex flex-wrap relative  justify-between overflow-hidden">
+      <Menu as="div" class="md:hidden bg-gray-700 text-white px-2 w-full py-2 ">
         <Menu.Button class="inline-flex w-full justify-left rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
           <svg
             aria-hidden="true"
@@ -64,7 +63,7 @@ const Navbar = () => {
           </Menu.Item>
         </Menu.Items>
       </Menu>
-      {/**For Window view */}
+
       <div class=" invisible md:visible items-center p-4 bg-gray-600 text-white text-2xl">
         <ul class=" navbar-nav flex flex-row pl-5 list-style-none mr-auto">
           <li class="nav-item pr-2">
