@@ -4,7 +4,7 @@ import { Menu } from "@headlessui/react";
 
 const Navbar = () => {
   return (
-    <nav class="w-full flex flex-wrap relative  justify-between overflow-hidden">
+    <nav class="w-full  flex-wrap overflow-hidden">
       <Menu as="div" class="md:hidden bg-gray-700 text-white px-2 w-full py-2 ">
         <Menu.Button class="inline-flex w-full justify-left rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
           <svg
